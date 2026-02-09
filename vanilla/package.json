@@ -2,6 +2,7 @@
   "name": "vanilla-monorepo",
   "version": "1.0.0",
   "private": true,
+  "packageManager": "bun@1.1.34",
   "scripts": {
     "dev": "turbo run dev --parallel",
     "dev:backend": "turbo run dev --filter=backend",

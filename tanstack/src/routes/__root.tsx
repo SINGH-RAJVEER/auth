@@ -7,8 +7,6 @@ import {
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
 import { TanStackDevtools } from "@tanstack/react-devtools";
 
-import Header from "../components/Header";
-
 import appCss from "../styles.css?url";
 
 export const Route = createRootRoute({
@@ -61,16 +59,9 @@ function RootDocument({ children }: { children: React.ReactNode }) {
               >
                 Sign Up
               </Link>
-              <Link
-                to="/dashboard"
-                className="text-gray-300 hover:text-white transition-colors"
-              >
-                Dashboard
-              </Link>
             </div>
           </div>
         </nav>
-        <Header />
         {children}
         <TanStackDevtools
           config={{
